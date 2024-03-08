@@ -1,0 +1,20 @@
+export const environment = {
+  production: true,
+  name: 'prod',
+  baseAPIURL: '/api',
+  logoutUrl: 'https://tradingweb.ais.co.th/TDMWeb/Login.do',
+  homeUrl: 'https://tradingweb.ais.co.th/TDMWeb/Login.do',
+  cspUrl: 'https://cspportal.ais.co.th/SFFWeb/pages/om/om_customer_portal.jsf?idRefresh=0',
+  sffHomeUrl: 'https://sffportal.ais.co.th/SFFWeb/pages/home/index.jsf',
+  salePortalBaseUrl: 'https://mychannel.ais.co.th/sales-portal',
+  customerInfoPortalBaseUrl: 'https://mychannel.ais.co.th/customer-portal-info',
+  baseHref: '/customer-service',
+  checkListMobileStatus: ['000', '377', '378', '379', '384', '310'],
+  clientID: '',
+  sentryDSN: '',
+  sentryTags: 'prod',
+  payAdvanceUrl: 'https://ppmweb.ais.co.th/AISPostpaidWeb/pages/PaymentOTC.jsp',
+  payAdvanceProjectCode: 'PAY_ORDER_MY_CHANNEL',
+  payAdvancePartnerProjectCode: 'PAY_ORDER_PARTNER',
+  loginNew : 'https://partnerservices.ais.co.th/partnerservices/loginByPKI.aspx'
+};

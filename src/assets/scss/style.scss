@@ -1,0 +1,217 @@
+@import "../../assets/scss/util/color";
+//Font
+.font-white { color: $mc-white; }
+.font-light-gray { color: $mc-light-gray; }
+.font-light-medium-gray { color: $mc-light-medium-gray; }
+.font-medium-gray { color: $mc-medium-gray; }
+.font-gray { color: $mc-gray; }
+.font-light-green { color: $mc-light-green; }
+.font-dark-green { color: $mc-dark-green; }
+.font-green-yellow { color: $mc-green-yellow; }
+.font-shamrock-blue { color: $mc-shamrock-blue; }
+.font-brown { color: $mc-brown; }
+.font-orange { color: $mc-orange; }
+.font-pink { color: $mc-pink; }
+.font-base-green { color: $mc-base-green; }
+
+//Background
+.bg-white { background-color: $mc-white; }
+.bg-light-gray { background-color: $mc-light-gray; }
+.bg-light-medium-gray{ background-color: $mc-light-medium-gray; }
+.bg-medium-gray { background-color: $mc-medium-gray; }
+.bg-light-green{ background-color: $mc-light-green; }
+.bg-dark-green { background-color: $mc-dark-green; }
+.bg-green-yellow{ background-color: $mc-green-yellow; }
+.bg-shamrock-blue{ background-color: $mc-shamrock-blue; }
+.bg-orange{ background-color: $mc-orange; }
+.bg-pink{ background-color: $mc-pink; }
+.bg-light-pink{ background-color: $mc-light-pink; }
+.bg-yellow{ background-color: $mc-yellow; }
+.bg-light-purple{ background-color: $mc-light-purple; }
+
+.white-body{
+  background: $mc-white;
+}
+.gray-body{
+  background: $mc-light-gray;
+}
+.ErrorWrapper{
+  display: block;
+  position: relative;
+}
+.ErrorBox{
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  top:0;
+  left: 0;
+  bottom: 0;
+  word-wrap: break-word;
+  background-color: white;
+  text-align: center;
+}
+.ErrorMsg{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  &--small{
+    font-size: 65%;
+    text-align: right;
+    line-height: 1.5;
+    top: 70%;
+    padding-right: 9px;
+  }
+}
+
+.moreDetail{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #74a222;
+  z-index: 99;
+  &--small{
+    font-size: 65%;
+    right: 10px;
+    bottom: -43px;
+  }
+}
+
+.spinner {
+  animation: spinner 2s infinite linear;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
+
+li.no-bullet {
+  list-style: none;
+}
+.ui-datepicker select.ui-datepicker-year{
+  width:42% !important;
+}
+
+.no_border_right{
+  border-right: none !important;
+}
+.top-border-radius{
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.no-top-radius{
+  -webkit-border-top-left-radius: 0;
+  -moz-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.no-bottom-radius{
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tab_condition table td{
+  padding: 5px;
+}
+.table-radius thead tr:first-child td:first-child {
+  -webkit-border-top-left-radius:5px;
+}
+.table-radius thead tr:first-child td:last-child {
+  -webkit-border-top-right-radius:5px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+.float-left {
+  float: left;
+}
+
+.over-flow-y {
+  overflow: auto;
+  height:auto;
+}
+
+.over-flow-y .set-hight{
+  height:auto;
+  max-height: 250px;
+  min-height: 50px;
+}
+.font12-effective{
+  font-size: 12px;
+}
+.font_color_white{
+  color: #fff;
+}
+
+.valign-middle {
+  width: 100%;
+  display: table;
+  @media #{$x-small} {
+    display: block;
+  }
+  > .columns {
+    display: table-cell;
+    vertical-align: middle;
+    @media #{$x-small} {
+      display: block;
+    }
+  }
+
+  > .columns, > [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+}
+
+:focus{
+  outline: none;
+}
+
+.slick-dots{
+  background-color: white;
+  padding-bottom: 15px !important;
+
+  li{
+    margin: 0 2.5px;
+    button:before{
+      font-size: 10px !important;
+    }
+
+  }
+  li.slick-active{
+    button:before{
+      font-size: 14px !important;
+      color: #74a122 !important;
+    }
+  }
+
+}

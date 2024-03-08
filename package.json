@@ -21,6 +21,7 @@
     "@angular/router": "^17.2.0",
     "@corp-ais/client-my-channel-lib": "^1.0.5",
     "@sentry/browser": "^7.105.0",
+    "@types/jquery": "^3.5.29",
     "async": "^3.2.5",
     "core-js": "^3.36.0",
     "css-what": "^6.1.0",

@@ -8,7 +8,7 @@ import { FeatureToggleService } from './feature-toggle.service';
   template: '<ng-content *ngIf="isEnabled"></ng-content>',
 })
 export class FeatureToggleComponent {
-  @Input() featureName: string | undefined;
+  @Input() featureName!: string;
   isEnabled = false;
   private featureIsEnabled = false;
 

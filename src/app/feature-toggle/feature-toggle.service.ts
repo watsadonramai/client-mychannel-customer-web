@@ -4,8 +4,8 @@ import { features } from './features.config';
 export class FeatureToggleService {
   isEnabled(feature: string) {
     let result = false;
-    if (features[feature]) {
-      result = features[feature];
+    if (features[feature as keyof typeof features]) {
+      result = features[feature as keyof typeof features];
     }
     return result;
   }
